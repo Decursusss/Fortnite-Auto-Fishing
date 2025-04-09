@@ -106,11 +106,8 @@ def leftClick():
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
     time.sleep(0.1)
 
-
 was_bobber_visible = False
-
-was_bobber_visible = False
-bobber_missing_frames = 0  # Счётчик пропусков
+bobber_missing_frames = 0
 
 while True:
     current_frame = capture_window("Fortnite")
